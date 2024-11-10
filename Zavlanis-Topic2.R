@@ -51,8 +51,9 @@ dev.off()
 # d.
 # Collect data about cholesterol with the suitable attribute into a table using function table().
 cholesterol_table <- table(data$Cholesterol.Level)
+print(cholesterol_table)
 
-# Create the piechart of the previous table and save it into a jpeg file.
+# Create the pie chart of the previous table and save it into a jpeg file.
 jpeg("./Zavlanis-Plots/piechart.jpeg", width = 800, height = 800, units = "px")
 pie(
     cholesterol_table,
