@@ -90,6 +90,6 @@ print(nrow(pokedex[pokedex$Grade == "Strong", ]))
 
 # Show the Grade of a Pokemon with specific name, using again the condition inside the index 
 print("Grade of Pokemon named 'Haunter':")
-print(pokedex[pokedex$names == "Haunter", "Grade"])
+print(pokedex["Haunter", "Grade"])
 
 source("Zavlanis-Topic4.R", echo = TRUE)
